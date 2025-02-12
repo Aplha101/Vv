@@ -1,0 +1,58 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right top, #d16ba5, #d975af, #e27fb9, #ea89c4, #f393ce, #f79ed6, #faa8de, #feb3e6, #fec0ec, #feccf2, #fed8f7, #ffe4fb);
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+    animation: hoverUpDown 3s ease-in-out infinite;
+}
+
+.message {
+    position: relative;
+    z-index: 2;
+}
+
+.signature {
+    margin-top: 20px;
+    font-style: italic;
+    color: #e91e63;
+}
+
+/* Hover Floating Animation */
+@keyframes hoverUpDown {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Raining Hearts */
+.heart-rain {
+    position: absolute;
+    top: -10%;
+    font-size: 24px;
+    color: white;
+    opacity: 0.8;
+    animation: heartFall linear infinite;
+}
+
+@keyframes heartFall {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(500px) rotate(360deg); opacity: 0; }
+}
