@@ -16,3 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setInterval(createHeart, 300);
 });
+
+
+next = () =>{
+  window.location.href = 'next.html'
+}

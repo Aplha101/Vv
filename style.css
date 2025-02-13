@@ -28,14 +28,21 @@ body, html {
 .message {
     position: relative;
     z-index: 2;
+color:white;
 }
 
 .signature {
     margin-top: 20px;
     font-style: italic;
-    color: #e91e63;
+    color: white;
 }
-
+.next{
+  background-color:#e91e63;
+  border:none;
+  border-radius: 10px;
+  text-align:center;
+  justify-items: center;
+}
 /* Hover Floating Animation */
 @keyframes hoverUpDown {
     0%, 100% { transform: translateY(0); }
@@ -55,4 +62,17 @@ body, html {
 @keyframes heartFall {
     0% { transform: translateY(0) rotate(0deg); opacity: 1; }
     100% { transform: translateY(500px) rotate(360deg); opacity: 0; }
+}
+
+.message >h1{
+  border-bottom:2px solid white;
+}
+
+/* Long text styling */
+.long-text {
+    padding: 25px;
+    font-size: 18px;
+    line-height: 1.6;
+    max-height: 600px;
+    overflow-y: auto; /* Enable scroll inside the card for long text */
 }
